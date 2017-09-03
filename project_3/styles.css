@@ -1,0 +1,54 @@
+.image{
+	width: 300px;
+	border-radius: 20px;	
+	margin: 28px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+}
+.center{
+	margin: auto;
+}
+.desc{
+	padding: 3px;
+}
+hr{
+	width: 90%;
+	opacity: 0.4;
+}
+.info{
+	border-style: solid;
+	border-radius: 13px;
+	padding: 3px;
+	border-width: 1px;
+	margin:10px;
+	font-size: 18px;
+}
+.name{
+	text-align: center;
+	border-radius: 15px;
+	margin: 5px;
+	text-decoration: underline;
+}
+.facts{
+	font-style: italic;
+	padding: 3px;
+}
+span{
+	font-weight: bold;
+}
+.list{
+list-style-type: none;
+}
+.main{
+	padding: 8px;
+	color: white;
+	border-color: white;
+	 box-shadow: 10px 10px 15px #888888;
+	width: 360px;
+	border-style: solid;
+	border-width: 1px;
+	background-image: url(bambooo.jpg);
+	border-radius: 9px;
+}
+/* add your CSS here */
