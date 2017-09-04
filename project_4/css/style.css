@@ -1,0 +1,31 @@
+.img-main {
+	width: 100%;
+	border-radius: 25px;
+}
+
+.img-logo {
+	width: 20%;
+	padding-top: 10px;
+}
+
+.img {
+	width: 100%;
+	margin: 10px;
+	border-radius: 25px;	
+}
+
+.header {
+	width: 100%;
+}
+
+.name {
+	text-align: right;
+}
+
+p {
+	font-family: arial;
+}
+
+.name-header {
+	padding-top: 10px;
+}
