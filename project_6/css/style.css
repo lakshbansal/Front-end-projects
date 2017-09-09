@@ -1,0 +1,11 @@
+body {
+    text-align: center;
+}
+h1 {
+	font-family: "jokerman";
+	text-decoration: underline;
+}
+h2 {
+	font-family: "chiller";
+	color:red;
+}
