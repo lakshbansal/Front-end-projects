@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>delhi</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/knockout.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="head">
+            <h1>DELHI:</h1>
+            <h3>The Capital of INDIA</h3>
+        </div>
+        <div class="col-md-4">
+            <form class="navbar-form navbar-left" align="center">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search" data-bind="value: inputText, valueUpdate: 'afterkeydown', event: {keyup: filtersearch}">
+                </div>
+                <br/>
+            </form>
+            <div class="row">
+                <ul class="nav navbar-nav" data-bind="foreach:locations">
+                    <li class="list">
+                        <a data-bind="visible:show, event:{click:$parent.selectAll},text:title"></a>
+                        <hr>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div id="map"></div>
+            <script>
+                var map;
+
+                function initMap() {
+                    map = new google.maps.Map(document.getElementById('map'), {
+                        center: {
+                            lat: 28.5772,
+                            lng: 77.2171
+                        },
+                        zoom: 12
+                    });
+                    ko.applyBindings(new viewmodel());
+                }
+
+                function googleerror() {
+                    alert("Error--------");
+                }
+            </script>
+            <script src="js/app.js"></script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL9ta1__MqxB-Y1VNESEiOWNfDCdOXDss&v=3&callback=initMap" onerror="googleerror()">
+            </script>
+        </div>
+</body>
+
+</html>
